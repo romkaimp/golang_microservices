@@ -1,0 +1,12 @@
+syntax = "proto3";
+package product;
+option go_package="micro/ProductService/proto";
+
+service ProductService {
+    rpc ListProducts (Empty) returns (ProductResponse) {}
+}
+message Empty {
+}
+message ProductResponse {
+    repeated string products = 1;
+}
