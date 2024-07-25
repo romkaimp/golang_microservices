@@ -1,10 +1,11 @@
 package main
+
 import (
 	"context"
 	"log"
+	pb "micromod/ProductService/gen/go/sso"
 	"net"
 	"google.golang.org/grpc"
-	pb "./gen/go/sso"
 )
 
 type server struct {
